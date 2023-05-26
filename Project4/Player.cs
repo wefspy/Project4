@@ -76,6 +76,7 @@ public class Player
             position.X += speed;
             direction = Direction.Right;
         }
+        collideBox = new Rectangle((int)position.X, (int)position.Y, 40, 40);
     }
 
     public void TakeDamage(int damage)
